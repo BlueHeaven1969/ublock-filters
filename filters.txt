@@ -57,4 +57,6 @@ noaa.gov#@#+js(prevent-canvas, experimental-webgl)
 ! Feb 8, 2026 https://controld.com
 @@||europe.analytics.controld.com/v2/$xhr,1p
 
+! Qobuz
+play.qobuz.com##.mobileOverlay
 
