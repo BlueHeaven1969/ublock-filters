@@ -1,0 +1,60 @@
+! Title: Rick's uBlock filters
+! Expires: 7 days
+
+! Reddit block sponsored articles
+reddit.com##p:has-text('Because you'):upward(article)
+reddit.com##p:has-text('Similar to'):upward(article)
+reddit.com##p:has-text('Popular on Reddit'):upward(article)
+reddit.com##p:has-text('Suggested for you'):upward(article)
+reddit.com##p:has-text('Based on your'):upward(article)
+reddit.com##p:has-text('Popular near you'):upward(article)
+
+! CNN - block reg wall
+www.cnn.com##.user-account-reg-wall__overlay
+www.cnn.com##.user-account-reg-wall__modal--slide.user-account-reg-wall__modal
+
+! Allow flight tracking past BadBlock+
+@@||adsb.lol
+@@||globe.adsb.fi
+@@||globe.adsbexchange.com
+
+! Allow webgl on weatherwise
+weatherwise.app#@#+js(prevent-canvas, webgl)
+weatherwise.app#@#+js(prevent-canvas, webgl2)
+weatherwise.app#@#+js(prevent-canvas, experimental-webgl)
+weatherwise.app#@#+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"webgl"', abort)
+weatherwise.app#@#+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"webgl2"', abort)
+weatherwise.app#@#+js(trusted-suppress-native-method, OffscreenCanvas.prototype.getContext, '"experimental-webgl"', abort)
+
+! Allow webgl on flight tracking sites
+adsb.lol#@#+js(prevent-canvas, webgl)
+adsb.lol#@#+js(prevent-canvas, webgl2)
+globe.adsb.fi#@#+js(prevent-canvas, webgl)
+globe.adsb.fi#@#+js(prevent-canvas, webgl2)
+globe.adsbexchange.com#@#+js(prevent-canvas, webgl)
+globe.adsbexchange.com#@#+js(prevent-canvas, webgl2)
+
+! Allow webgl on noaa.gov
+noaa.gov#@#+js(prevent-canvas, webgl)
+noaa.gov#@#+js(prevent-canvas, webgl2)
+noaa.gov#@#+js(prevent-canvas, experimental-webgl)
+
+! Inline script allows for flight tracking sites
+@@||adsb.lol^$inline-script,1p
+@@||globe.adsb.fi^$inline-script,domain=globe.adsb.fi
+@@||globe.adsbexchange.com^$inline-script,domain=globe.adsbexchange.com
+@@||map.adsbexchange.com^$image,domain=globe.adsbexchange.com
+
+! Jan 24, 2026 https://web.weatherwise.app
+@@||events.mapbox.com^$xhr,domain=web.weatherwise.app
+
+! Jan 31, 2026 https://mdblist.com
+@@||cdnjs.cloudflare.com^$font,domain=mdblist.com
+
+! Feb 8, 2026 https://www.nytimes.com
+@@||samizdat-graphql.nytimes.com/graphql/v2$xhr,domain=www.nytimes.com
+
+! Feb 8, 2026 https://controld.com
+@@||europe.analytics.controld.com/v2/$xhr,1p
+
+
