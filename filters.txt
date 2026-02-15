@@ -60,3 +60,6 @@ noaa.gov#@#+js(prevent-canvas, experimental-webgl)
 ! Qobuz
 play.qobuz.com##.mobileOverlay
 
+! Xfinity
+@@||polaris.xfinity.com/globalnav/polaris.wc.js$script,domain=xfinity.com
+
