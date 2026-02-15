@@ -65,3 +65,7 @@ play.qobuz.com##.mobileOverlay
 @@||cws.xfinity.com^$xhr,domain=xfinity.com
 @@||sdx.xfinity.com^$xhr,domain=xfinity.com
 
+! Hannaford
+@@||geo.captcha-delivery.com^$domain=hannaford.com
+@@||geo.captcha-delivery.com^$xhr,1p
+
