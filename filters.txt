@@ -18,6 +18,11 @@ www.cnn.com##.user-account-reg-wall__modal--slide.user-account-reg-wall__modal
 @@||globe.adsb.fi
 @@||globe.adsbexchange.com
 
+! Allow wegbl on controld
+controld.com#@#+js(prevent-canvas, webgl)
+controld.com#@#+js(prevent-canvas, webgl2)
+controld.com#@#+js(prevent-canvas, experimental-webgl)
+
 ! Allow webgl on weatherwise
 weatherwise.app#@#+js(prevent-canvas, webgl)
 weatherwise.app#@#+js(prevent-canvas, webgl2)
