@@ -74,3 +74,6 @@ play.qobuz.com##.mobileOverlay
 @@||geo.captcha-delivery.com^$domain=hannaford.com
 @@||geo.captcha-delivery.com^$xhr,1p
 
+! Loft 27
+loftliving.com#@#+js(prevent-addEventListener, visibilitychange)
+loftliving.com#@#+js(prevent-addEventListener, pagehide)
