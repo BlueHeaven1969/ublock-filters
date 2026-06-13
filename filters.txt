@@ -77,3 +77,7 @@ play.qobuz.com##.mobileOverlay
 ! Loft 27
 loftliving.com#@#+js(prevent-addEventListener, visibilitychange)
 loftliving.com#@#+js(prevent-addEventListener, pagehide)
+
+! Pebble.com
+@@||intercomassets.com^$domain=repebble.com
+
