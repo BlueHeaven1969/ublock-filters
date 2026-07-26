@@ -52,6 +52,7 @@ noaa.gov#@#+js(prevent-canvas, experimental-webgl)
 
 ! Inline script allows for flight tracking sites
 @@||rsp-lsrvr.lan^$inline-script,1p
+@@||server.lan^$inline-script,1p
 @@||adsb.lol^$inline-script,1p
 @@||globe.adsb.fi^$inline-script,domain=globe.adsb.fi
 @@||globe.adsbexchange.com^$inline-script,domain=globe.adsbexchange.com
