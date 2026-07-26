@@ -41,6 +41,9 @@ globe.adsbexchange.com#@#+js(prevent-canvas, webgl2)
 rsp-lsrvr.lan#@#+js(prevent-canvas, webgl)
 rsp-lsrvr.lan#@#+js(prevent-canvas, webgl2)
 rsp-lsrvr.lan#@#+js(prevent-canvas, experimental-webgl)
+server.lan#@#+js(prevent-canvas, webgl)
+server.lan#@#+js(prevent-canvas, webgl2)
+server.lan#@#+js(prevent-canvas, experimental-webgl)
 
 ! Allow webgl on noaa.gov
 noaa.gov#@#+js(prevent-canvas, webgl)
